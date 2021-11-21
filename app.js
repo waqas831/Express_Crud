@@ -3,7 +3,7 @@ const express=require('express')
 const app=express();
 const router=require('./routes/routes')
 const bodyParser=require('body-parser');
-const port =8080;
+const port =process.env.PORT || 8080;
 
 app.set('view engine','ejs')
 app.use(express.static("public"));
