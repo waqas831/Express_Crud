@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+
+<div class="container mt-4 hello_world">
+    <h2 class="text-center text-uppercase h21">Students Record</h2>
+    <div class="row cl">
+      <div class="col-sm-9 second_div_hello">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-sm-2">Name</th>
+              <th class="col-sm-2">Roll</th>
+              <th class="col-sm-2">Fees</th>
+              <th class="col-sm-2">Department</th>
+              <th class="col-sm-2">delete</th>
+              <th class="col-sm-2">edit</th>
+            </tr>
+          </thead>
+          <tbody class="mt-4">
+            <% data.forEach(function(student) { %>
+            <tr class="mt-4">
+              <td class="col-sm-2"><%= student.name %></td>
+              <td class="col-sm-2"><%= student.roll %></td>
+              <td class="col-sm-2"><%= student.fees %></td>
+              <td class="col-sm-2"><%= student.department %></td>
+              <td class="col-sm-2">
+                <form method="post" action="/delete/<%= student._id %>">
+                  <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+              </td>
+              <td class="col-sm-2">
+                <a href="/edit/<%= student._id %>">edit</a>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,59 @@
+<%- include('partials/header') %>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-8 first_div">
+      <h2>Students Record Crudd</h2>
+      <form method="post" action="/update/<%- data._id %>">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Enter Name</label>
+          <input
+            type="text"
+            value="<%- data.name %>"
+            class="form-control"
+            id="exampleInputName"
+            aria-describedby="nameHelp"
+            name="name"
+          />
+        </div>
+        <label for="exampleInputName" class="form-label">Enter Roll</label>
+        <input
+          type="text"
+          value="<%- data.roll %>"
+          class="form-control"
+          id="exampleInputName"
+          aria-describedby="nameHelp"
+          name="roll"
+        />
+        <label for="exampleInputName" class="form-label">Enter Fees</label>
+        <input
+        value="<%- data.fees %>"
+          type="number"
+          class="form-control"
+          id="exampleInputName"
+          aria-describedby="nameHelp"
+          name="fees"
+        />
+        <label for="exampleInputName" class="form-label"
+          >Enter Department</label
+        >
+        <input
+        value="<%- data.department %>"
+          type="text"
+          class="form-control"
+          id="exampleInputName"
+          aria-describedby="nameHelp"
+          name="department"
+        />
+        <div class="float mt-4">
+          <button class="float-start" type="submit" class="btn btn-primary btn_submit">
+            Update
+          </button>
+          <button class="float-end" type="submit" class="btn btn-primary btn_submit">
+            Back To Home
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<%- include('partials/footer') %>

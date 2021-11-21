@@ -1,0 +1,104 @@
+<%- include('partials/header') %>
+<div class="container">
+  <div class="row mt-5 cl">
+    <div class="col-sm-6 first_div">
+      <h2>Students Record Crudd</h2>
+      <form method="post" action="/">
+        <div class="mb-3">
+          <label for="exampleInputName" class="form-label">Enter Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputName"
+            aria-describedby="nameHelp"
+            name="name"
+          />
+        </div>
+        <label for="exampleInputName" class="form-label">Enter Roll</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputName"
+          aria-describedby="nameHelp"
+          name="roll"
+        />
+        <label for="exampleInputName" class="form-label">Enter Fees</label>
+        <input
+          type="number"
+          class="form-control"
+          id="exampleInputName"
+          aria-describedby="nameHelp"
+          name="fees"
+        />
+        <label for="exampleInputName" class="form-label"
+          >Enter Department</label
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputName"
+          aria-describedby="nameHelp"
+          name="department"
+        />
+        <button type="submit" class="btn btn-primary btn_submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('records') %>
+<%- include('partials/footer') %>
+
+<!-- <table>
+      <tr>
+  
+      <div class="row hello">
+        <div class="col-sm-2 ">
+          <th><td>Name</td></th>
+        </div>
+        <div class="col-sm-2">
+          <th><td>Roll</td></th>
+        </div>
+        <div class="col-sm-2">
+          <th><td>Fees</td></th>
+        </div>
+        <div class="col-sm-2">
+          <th><td>Department</td></th>
+        </div>
+        <div class="col-sm-3">
+          <th><td>Delete</td></th>
+          <th><td>Edit</td></th>
+        </div>
+      </tr>
+      <% 
+        for(var i=0;i<data.length;i++){ %>
+          <tr>
+            <div class="col-sm-9 second_div_hello">
+              <div class="row hello">
+                <div class="col-sm-2 ">
+                  <td><%= data[i].name %></td>
+                </div>
+                <div class="col-sm-2">
+                  <td><%= data[i].roll %></td>
+                </div>
+                <div class="col-sm-2">
+                  <td><%= data[i].fees %></td>
+                </div>
+                <div class="col-sm-2">
+                  <td><%= data[i].department %></td>
+                </div>
+                <div class="col-sm-3">
+                  <td><a href="/delete/<%= data[i]._id %>">Delete</a></td>
+                  <td><a href="/edit/<%= data[i]._id %>">Edit</a></td>
+                </div>
+              </tr>
+          <% } %>
+      %>
+    </table>
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div> -->

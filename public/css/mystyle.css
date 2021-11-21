@@ -1,0 +1,41 @@
+*{
+    font-family: 'Satisfy', cursive;
+}
+.hello{
+    margin-left: 50px;
+    border:2px solid green;
+}
+.first_div{
+    background-color: burlywood;
+   
+
+}
+.cl{
+    justify-content: center;
+    padding-bottom:6%;
+}
+.btn_submit{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+.ro_22{
+  /* margin-top:20%;
+    border:2px solid green; */
+}
+tr,td{
+    padding:8px;
+}
+.hello_world{
+    margin-left: 20px;
+}
+.hello_world h2{
+    color:grey;
+    font-size:25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom:3%;
+    font-style: italic;
+
+}
